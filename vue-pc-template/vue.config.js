@@ -1,5 +1,5 @@
 module.exports = {
-	publicPath: process.env.BASE_URL,
+	publicPath: '/',
 	outputDir: process.env.VUE_APP_OUT_PUT_DIR,
 	configureWebpack: {
 		resolve: {
