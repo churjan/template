@@ -4,8 +4,7 @@ import router from './router'
 import store from './store'
 
 import '@/apis'
-import '@/utils/util'
-import '@/utils/filter'
+import '@/utils'
 import '@/scss/index.scss'
 import './plugins/element.js'
 
