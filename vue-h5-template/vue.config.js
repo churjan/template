@@ -1,6 +1,6 @@
 module.exports = {
 	publicPath: process.env.BASE_URL,
-	outputDir: process.env.OUT_PUT_DIR,
+	outputDir: process.env.VUE_APP_OUT_PUT_DIR,
 	configureWebpack: {
 		resolve: {
 			alias: {

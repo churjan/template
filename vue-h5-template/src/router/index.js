@@ -8,6 +8,7 @@ context.keys().forEach(name => {
 	routes.push(context(name).default)
 })
 const router = new VueRouter({
+	base: process.env.BASE_URL,
 	mode: 'history',
 	routes,
 })
