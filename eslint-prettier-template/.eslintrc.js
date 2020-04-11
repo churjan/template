@@ -1,9 +1,12 @@
 module.exports = {
 	root: true,
 	env: {
-		es6:true,
-		node: true,
+		browser: true,
+        node: true,
+        es6: true,
+        commonjs: true,
 	},
+	parser: 'babel-eslint',
 	extends: ["plugin:prettier/recommended"],
 	rules: {
 		'prettier/prettier': [
@@ -14,11 +17,9 @@ module.exports = {
 				semi: false,
 				singleQuote: true,
 				trailingComma: 'es5',
-				printWidth: 120
+				printWidth: 120,
 			},
 		],
 	},
-	parserOptions: {
-		parser: 'babel-eslint',
-	},
+
 }
