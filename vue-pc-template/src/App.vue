@@ -7,8 +7,6 @@
 <script>
 export default {
 	name: 'app',
-	mounted() {
-		console.log(process.env)
-	},
+	mounted() {},
 }
 </script>

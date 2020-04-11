@@ -26,4 +26,12 @@ module.exports = {
 			},
 		},
 	},
+	devServer: {
+		proxy: {
+			'/mock': {
+				target: 'http://localhost:3000',
+				changeOrigin: true,
+			},
+		},
+	},
 }

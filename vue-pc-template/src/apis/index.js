@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import './interceptor.js'
-const context = require.context('/', false, /\.(api.js)$/)
+const context = require.context('/', false, /\.api\.js$/)
 const apis = {}
 context.keys().forEach(name => {
 	let key = name.replace(/^\.\//, '').replace(/\.api\.js$/, '')
