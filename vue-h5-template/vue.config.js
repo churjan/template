@@ -13,6 +13,16 @@ module.exports = {
 		config.resolve.extensions.add('css')
 		config.resolve.extensions.add('scss')
 	},
+	css: {
+		loaderOptions: {
+			// 给 sass-loader 传递选项
+			sass: {
+				prependData: `
+					@import "@/scss/variables";
+                `,
+			},
+		},
+	},
 	devServer: {
 		proxy: {
 			'/mock': {
