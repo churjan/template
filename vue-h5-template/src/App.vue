@@ -1,6 +1,7 @@
-<template lang="pug">
-	#app
-		router-view
+<template>
+	<div id="app">
+		<router-view></router-view>
+	</div>
 </template>
 <script>
 export default {
@@ -9,8 +10,6 @@ export default {
 	},
 }
 </script>
-<style>
-html {
-	/* user-select: none; */
-}
+<style lang="scss">
+@import '@/scss';
 </style>

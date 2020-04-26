@@ -8,15 +8,10 @@ module.exports = {
 			},
 		},
 	},
-	css: {
-		loaderOptions: {
-			// 给 sass-loader 传递选项
-			sass: {
-				prependData: `
-					@import "@/scss/index.scss";
-                `,
-			},
-		},
+	chainWebpack: config => {
+		//配置别名
+		config.resolve.extensions.add('css')
+		config.resolve.extensions.add('scss')
 	},
 	devServer: {
 		proxy: {

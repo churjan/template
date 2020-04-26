@@ -1,4 +1,4 @@
-# miniapp-admin
+# vue-h5-template
 
 ## Project setup
 
