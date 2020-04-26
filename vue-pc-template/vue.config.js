@@ -1,7 +1,3 @@
-const path = require('path')
-function resolve(dir) {
-	return path.join(__dirname, dir)
-}
 module.exports = {
 	publicPath: process.env.BASE_URL,
 	outputDir: process.env.VUE_APP_OUT_PUT_DIR,
@@ -14,14 +10,15 @@ module.exports = {
 	},
 	chainWebpack: config => {
 		//配置别名
-		config.resolve.alias.set('@', resolve('src'))
+		config.resolve.extensions.add('css')
+		config.resolve.extensions.add('scss')
 	},
 	css: {
 		loaderOptions: {
 			// 给 sass-loader 传递选项
 			sass: {
 				prependData: `
-					@import "@/scss/index.scss";
+					@import "@/scss";
                 `,
 			},
 		},
