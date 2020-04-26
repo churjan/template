@@ -4,9 +4,7 @@ import router from './router'
 import store from './store'
 
 import '@/apis'
-import '@/utils/util'
-import '@/utils/filter'
-import '@/scss/index.scss'
+import '@/utils'
 
 import Vant from 'vant'
 import 'vant/lib/index.css'

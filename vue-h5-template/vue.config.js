@@ -8,4 +8,22 @@ module.exports = {
 			},
 		},
 	},
+	css: {
+		loaderOptions: {
+			// 给 sass-loader 传递选项
+			sass: {
+				prependData: `
+					@import "@/scss/index.scss";
+                `,
+			},
+		},
+	},
+	devServer: {
+		proxy: {
+			'/mock': {
+				target: 'http://localhost:3000',
+				changeOrigin: true,
+			},
+		},
+	},
 }
