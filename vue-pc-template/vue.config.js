@@ -18,7 +18,7 @@ module.exports = {
 			// 给 sass-loader 传递选项
 			sass: {
 				prependData: `
-					@import "@/scss";
+					@import "@/scss/variables";
                 `,
 			},
 		},

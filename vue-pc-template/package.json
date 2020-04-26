@@ -6,8 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-development": "vue-cli-service build --mode development",
-    "build-test": "vue-cli-service build --mode test",
+    "build:development": "vue-cli-service build --mode development",
+    "build:staging": "vue-cli-service build --mode staging",
     "precommit": "npm run lint"
   },
   "dependencies": {
@@ -33,7 +33,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.14.0",
     "prettier": "^1.19.1",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
