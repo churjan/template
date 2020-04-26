@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import './interceptor.js'
 const context = require.context('/', false, /\.api\.js$/)
 const apis = {}
 context.keys().forEach(name => {

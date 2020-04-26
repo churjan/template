@@ -1,5 +1,6 @@
 import axios from 'axios'
 import qs from 'qs'
+import './interceptor'
 export function post(url = '', data = {}, config = {}) {
 	data = qs.stringify(data)
 	return new Promise((resolve, reject) => {
