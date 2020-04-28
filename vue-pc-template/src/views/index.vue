@@ -4,16 +4,7 @@
 
 <script>
 export default {
-	mounted() {
-		this.$api.mock
-			.pageList({
-				pageNum: 1,
-				pageSize: 10,
-			})
-			.then(res => {
-				console.log(res)
-			})
-	},
+	mounted() {},
 }
 </script>
 
