@@ -1,13 +1,14 @@
 module.exports = {
+	parser: 'babel-eslint',
 	root: true,
 	env: {
 		browser: true,
-        node: true,
-        es6: true,
-        commonjs: true,
+		node: true,
+		es6: true,
+		commonjs: true,
 	},
-	parser: 'babel-eslint',
-	extends: ["plugin:prettier/recommended"],
+	extends: ['plugin:prettier/recommended'],
+	plugins: ['html'],
 	rules: {
 		'prettier/prettier': [
 			'error',
@@ -21,5 +22,4 @@ module.exports = {
 			},
 		],
 	},
-
 }
