@@ -10,6 +10,7 @@
 	},
 	"dependencies": {
 		"koa": "^2.11.0",
-		"koa-router": "^8.0.8"
+		"koa-router": "^8.0.8",
+		"require-directory": "^2.1.1"
 	}
 }
