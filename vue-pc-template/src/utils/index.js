@@ -4,7 +4,7 @@ const util = {
 	deleteNullValue(obj) {
 		const newObj = {}
 		for (let key of Object.keys(obj)) {
-			if (obj[key] !== '' && obj[key] !== null && obj[key] !== undefined) {
+			if (!['', null, undefined].includes(obj[key])) {
 				newObj[key] = obj[key]
 			}
 		}
