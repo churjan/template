@@ -10,6 +10,17 @@ const util = {
 		}
 		return newObj
 	},
+
+	//获取当前地址栏上的参数并转化为对象
+	getURLParams() {
+		const search = window.location.search
+		const q = {}
+		search.replace(/([^?=&]+)=([^&]+)/g, (_, k, v) => {
+			console.log(_, k, v)
+			q[k] = v
+		})
+		return q
+	},
 }
 
 Vue.prototype.$util = util
