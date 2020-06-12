@@ -21,6 +21,26 @@ const util = {
 		})
 		return q
 	},
+	// 防抖
+	debounce(fn, delay = 300) {
+		return function(...args) {
+			clearTimeout(fn.id)
+			fn.id = setTimeout(() => {
+				fn.apply(this, args)
+			}, delay)
+		}
+	},
+	// 节流
+	throttle(fn, inteval) {
+		return function(...args) {
+			if (!fn.id) {
+				fn.id = setTimeout(() => {
+					fn.apply(this, args)
+					fn.id = null
+				}, inteval)
+			}
+		}
+	},
 }
 
 Vue.prototype.$util = util
