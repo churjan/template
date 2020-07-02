@@ -5,7 +5,10 @@ export function post(url = '', data = {}, config = {}) {
 	data = qs.stringify(data)
 	return new Promise((resolve, reject) => {
 		axios
-			.post(url, data, config)
+			.post(url, data, {
+				isShowToast: true,
+				...config,
+			})
 			.then(res => {
 				resolve(res)
 			})
@@ -18,7 +21,10 @@ export function postJson(url = '', data = {}, config = {}) {
 	data = qs.parse(data)
 	return new Promise((resolve, reject) => {
 		axios
-			.post(url, data, config)
+			.post(url, data, {
+				isShowToast: true,
+				...config,
+			})
 			.then(res => {
 				resolve(res)
 			})
@@ -30,7 +36,10 @@ export function postJson(url = '', data = {}, config = {}) {
 export function get(url = '', config = {}) {
 	return new Promise((resolve, reject) => {
 		axios
-			.get(url, config)
+			.get(url, {
+				isShowToast: true,
+				...config,
+			})
 			.then(res => {
 				resolve(res)
 			})

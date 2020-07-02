@@ -5,6 +5,7 @@ import store from './store'
 
 import '@/apis'
 import '@/utils'
+import '@/utils/filter'
 import './plugins/element'
 
 Vue.config.productionTip = false

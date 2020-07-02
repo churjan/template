@@ -31,13 +31,13 @@ const util = {
 		}
 	},
 	// 节流
-	throttle(fn, inteval) {
+	throttle(fn, interval) {
 		return function(...args) {
 			if (!fn.id) {
 				fn.id = setTimeout(() => {
 					fn.apply(this, args)
 					fn.id = null
-				}, inteval)
+				}, interval)
 			}
 		}
 	},
