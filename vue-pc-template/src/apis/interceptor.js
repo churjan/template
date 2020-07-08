@@ -5,7 +5,10 @@ axios.interceptors.response.use(
 		const { status, message } = response.data
 		//默认status不为200时，全局会弹toast错误提示
 		const { isShowToast } = response.config
-		if (status !== 200 && isShowToast) {
+		if (!isShowToast) {
+			return response.data
+		}
+		if (status !== 200) {
 			Message.error(message)
 			return Promise.reject(message)
 		} else {
