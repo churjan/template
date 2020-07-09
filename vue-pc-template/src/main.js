@@ -7,6 +7,7 @@ import '@/apis'
 import '@/utils'
 import '@/utils/filter'
 import './plugins/element'
+import '@/scss/index.scss'
 
 Vue.config.productionTip = false
 

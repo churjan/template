@@ -22,66 +22,6 @@
 			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
 			ipsum!
 		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
-		<h1>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-			adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-			ipsum!
-		</h1>
 	</div>
 </template>
 
@@ -97,5 +37,3 @@ export default {
 	},
 }
 </script>
-
-<style lang="scss" scoped></style>

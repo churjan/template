@@ -9,7 +9,8 @@ module.exports = {
 		},
 	},
 	chainWebpack: config => {
-		//配置别名
+		// 默认参考\node_modules\@vue\cli-service\lib\config\base.js
+		// 配置别名
 		config.resolve.extensions.add('css')
 		config.resolve.extensions.add('scss')
 	},
@@ -19,6 +20,7 @@ module.exports = {
 			sass: {
 				prependData: `
 					@import "@/scss/variables";
+					@import "@/scss/mixins";
                 `,
 			},
 		},

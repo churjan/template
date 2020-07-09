@@ -10,6 +10,3 @@ export default {
 	mounted() {},
 }
 </script>
-<style lang="scss">
-@import '@/scss';
-</style>
