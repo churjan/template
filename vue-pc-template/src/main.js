@@ -5,7 +5,7 @@ import store from './store'
 
 import '@/apis'
 import '@/utils'
-import '@/utils/filter'
+import '@/filters'
 import './plugins/element'
 import '@/scss/index.scss'
 
