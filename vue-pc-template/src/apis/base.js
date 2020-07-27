@@ -6,7 +6,6 @@ export function post(url = '', data = {}, config = {}) {
 	return new Promise((resolve, reject) => {
 		axios
 			.post(url, data, {
-				isShowToast: true,
 				...config,
 			})
 			.then(res => {
@@ -22,7 +21,6 @@ export function postJson(url = '', data = {}, config = {}) {
 	return new Promise((resolve, reject) => {
 		axios
 			.post(url, data, {
-				isShowToast: true,
 				...config,
 			})
 			.then(res => {
@@ -37,7 +35,6 @@ export function get(url = '', config = {}) {
 	return new Promise((resolve, reject) => {
 		axios
 			.get(url, {
-				isShowToast: true,
 				...config,
 			})
 			.then(res => {
