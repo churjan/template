@@ -1,50 +1,49 @@
 <template>
-    <div>
-        <toolset />
-        <div v-if="visible">
-            <c-dialog :visible.sync="visible">
-                hello
-            </c-dialog>
+    <div class="grid-container">
+        <div class="aside">
+            <c-menu />
         </div>
-        <div @click="jump">123123</div>
-        <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-            adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-            ipsum!
-        </h1>
-        <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-            adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-            ipsum!
-        </h1>
-        <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-            adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-            ipsum!
-        </h1>
-        <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt autem atque dicta in pariatur
-            adipisci repudiandae fuga aliquam qui nam modi, beatae neque, facilis, laboriosam quod. Numquam, repellat
-            ipsum!
-        </h1>
+        <div class="top">
+            <c-top />
+        </div>
+        <div class="main">
+            <router-view />
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            visible: true,
-        }
-    },
     components: {
-        Toolset: () => import('@/components/Toolset'),
-        CDialog: () => import('@/components/CDialog'),
+        CMenu: () => import('@/components/menu/c-menu'),
+        CTop: () => import('@/components/c-top'),
     },
-    methods: {
-        jump() {
-            this.$router.push('/demo')
+    computed: {
+        collapse() {
+            return this.$store.state.collapse
         },
     },
 }
 </script>
+
+<style lang="scss" scoped>
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        'a b'
+        'a c';
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    .aside {
+        grid-area: a;
+    }
+    .top {
+        grid-area: b;
+    }
+    .main {
+        grid-area: c;
+        padding: 15px;
+    }
+}
+</style>

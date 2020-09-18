@@ -5,9 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        publicPath: process.env.BASE_URL,
+        collapse: false,
     },
-    mutations: {},
+    mutations: {
+        collapse(state) {
+            state.collapse = !state.collapse
+        },
+    },
     actions: {},
     modules: {},
 })
