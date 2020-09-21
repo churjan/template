@@ -4,14 +4,14 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-    state: {
-        collapse: false,
+  state: {
+    collapse: false,
+  },
+  mutations: {
+    collapse(state) {
+      state.collapse = !state.collapse
     },
-    mutations: {
-        collapse(state) {
-            state.collapse = !state.collapse
-        },
-    },
-    actions: {},
-    modules: {},
+  },
+  actions: {},
+  modules: {},
 })

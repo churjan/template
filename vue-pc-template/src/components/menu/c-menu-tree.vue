@@ -15,12 +15,12 @@
 
 <script>
 export default {
-    props: {
-        menuData: Array,
-    },
-    components: {
-        CMenuTree: () => import('./c-menu-tree'),
-    },
+  props: {
+    menuData: Array,
+  },
+  components: {
+    CMenuTree: () => import('./c-menu-tree'),
+  },
 }
 </script>
 
