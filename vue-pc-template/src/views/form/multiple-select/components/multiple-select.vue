@@ -4,7 +4,7 @@
       multiple
       collapse-tags
       :value="vals"
-      @change="handleChange"
+      @change="onChange"
       @visible-change="changeListStatus"
       clearable
       :disabled="disabled"
@@ -13,7 +13,7 @@
     >
       <el-option v-for="(item, index) in list" :key="index" :label="item[label]" :value="item[value]"></el-option>
     </el-select>
-    <div class="custom-el-select">
+    <div class="custom-select">
       <div class="el-select set-height" v-show="!listVisible && mouseEnter && selList.length > 1">
         <span v-for="(item, index) in selList" :key="index">
           <span class="el-tag el-tag--info el-tag--mini el-tag--light">
@@ -80,7 +80,7 @@ export default {
       vals.splice(idx, 1)
       this.$emit('change', vals)
     },
-    handleChange(val) {
+    onChange(val) {
       this.$emit('change', val)
     },
   },
@@ -92,7 +92,7 @@ export default {
   position: relative;
   display: inline-block;
 }
-.custom-el-select {
+.custom-select {
   position: absolute;
   z-index: 1;
   top: 100%;

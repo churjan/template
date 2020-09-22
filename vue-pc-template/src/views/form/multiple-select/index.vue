@@ -22,7 +22,7 @@ export default {
           value: 3,
         },
       ],
-      type: '',
+      type: [],
     }
   },
   components: {
