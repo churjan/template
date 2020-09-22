@@ -10,14 +10,7 @@ export default [
       },
       {
         path: 'form',
-        component: { template: '<router-view />' },
-        children: [
-          { path: '', redirect: 'multiple-select' },
-          {
-            path: 'multiple-select',
-            component: () => import('@/views/form/multiple-select'),
-          },
-        ],
+        component: () => import('@/views/form'),
       },
     ],
   },

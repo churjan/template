@@ -7,12 +7,7 @@ const menuList = [
   {
     title: '表单',
     name: 'form',
-    children: [
-      {
-        title: '多选框',
-        name: 'multiple-select',
-      },
-    ],
+    icon: 'el-icon-s-platform',
   },
 ]
 

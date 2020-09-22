@@ -5,16 +5,14 @@
       collapse-tags
       :value="vals"
       @change="onChange"
-      @visible-change="changeListStatus"
+      @visible-change="onChangeListStatus"
       clearable
-      :disabled="disabled"
       v-bind="$attrs"
-      v-on="$listeners"
     >
       <el-option v-for="(item, index) in list" :key="index" :label="item[label]" :value="item[value]"></el-option>
     </el-select>
-    <div class="custom-select">
-      <div class="el-select set-height" v-show="!listVisible && mouseEnter && selList.length > 1">
+    <div class="custom-select" v-show="!listVisible && mouseEnter && selList.length > 1">
+      <div class="el-select set-height">
         <span v-for="(item, index) in selList" :key="index">
           <span class="el-tag el-tag--info el-tag--mini el-tag--light">
             <span class="el-select__tags-text">{{ item[label] }}</span>
@@ -55,10 +53,6 @@ export default {
       type: String,
       default: 'value',
     },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
   },
   computed: {
     selList() {
@@ -71,11 +65,12 @@ export default {
     },
   },
   methods: {
-    changeListStatus(bool) {
+    onChangeListStatus(bool) {
       this.listVisible = bool
     },
     deleteItem(idx) {
-      if (this.disabled) return
+      //禁止状态，不能删除
+      if (this.$attrs.disabled) return
       let vals = this.vals.slice(0)
       vals.splice(idx, 1)
       this.$emit('change', vals)

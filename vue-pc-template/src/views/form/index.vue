@@ -1,6 +1,10 @@
 <template>
   <div>
-    <multiple-select :list="list" v-model="type"> </multiple-select>
+    <el-form label-position="top">
+      <el-form-item label="多选项">
+        <multiple-select :list="list" v-model="type" />
+      </el-form-item>
+    </el-form>
   </div>
 </template>
 
@@ -22,7 +26,7 @@ export default {
           value: 3,
         },
       ],
-      type: [],
+      type: [1, 2],
     }
   },
   components: {
