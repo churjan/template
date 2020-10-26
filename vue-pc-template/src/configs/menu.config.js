@@ -7,7 +7,10 @@ const menuList = [
   {
     title: '表单',
     name: 'form',
-    icon: 'el-icon-s-platform',
+  },
+  {
+    title: 'mock使用',
+    name: 'mock',
   },
 ]
 

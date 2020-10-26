@@ -8,6 +8,7 @@ import '@/utils'
 import '@/filters'
 import './plugins/element'
 import '@/scss/index.scss'
+import '@/mock'
 
 Vue.config.productionTip = false
 

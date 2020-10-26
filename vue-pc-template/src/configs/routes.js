@@ -12,6 +12,10 @@ export default [
         path: 'form',
         component: () => import('@/views/form'),
       },
+      {
+        path: 'mock',
+        component: () => import('@/views/mock'),
+      },
     ],
   },
 ]
