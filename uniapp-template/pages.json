@@ -2,9 +2,14 @@
 	"easycom": {
 		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
 	},
-	"pages": [
-		{
-			"path": "pages/index/index"
-		}
-    ]
+	"pages": [{
+		"path": "pages/index/index"
+	}],
+	"subPackages": [{
+		"root": "demos",
+		"pages": [{
+			"path": "mock/mock"
+
+		}]
+	}]
 }

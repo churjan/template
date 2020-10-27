@@ -1,13 +1,15 @@
 <template>
 	<view>
-		<view @click="onJump">跳转到mock</view>
+		mock
 	</view>
 </template>
 
 <script>
 	export default {
 		mounted(){
-			
+			this.$apis.mock.postWay().then(res=>{
+				console.log(res,888)
+			})
 		},
 		data() {
 			return {
@@ -15,11 +17,7 @@
 			}
 		},
 		methods: {
-			onJump(){
-				uni.navigateTo({
-					url:'/demos/mock/mock'
-				})
-			}
+			
 		}
 	}
 </script>
