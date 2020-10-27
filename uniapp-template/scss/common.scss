@@ -1,0 +1,30 @@
+@for $i from 1 through 200 {
+	.mt#{$i} {
+		margin-top: #{$i}rpx;
+	}
+	.mr#{$i} {
+		margin-right: #{$i}rpx;
+	}
+	.mb#{$i} {
+		margin-bottom: #{$i}rpx;
+	}
+	.ml#{$i} {
+		margin-left: #{$i}rpx;
+	}
+	.pt#{$i} {
+		padding-top: #{$i}rpx;
+	}
+	.pr#{$i} {
+		padding-right: #{$i}rpx;
+	}
+	.pb#{$i} {
+		padding-bottom: #{$i}rpx;
+	}
+	.pl#{$i} {
+		padding-left: #{$i}rpx;
+	}
+}
+.flex-view{
+	display: flex;
+	align-items: center;
+}
