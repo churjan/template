@@ -1,5 +1,7 @@
 # vue-h5-template
 
+VUE H5 开发模板
+
 ## Project setup
 
 ```shell
