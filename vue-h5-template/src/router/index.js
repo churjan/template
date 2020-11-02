@@ -1,15 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
+import routes from '@/configs/routes'
 
-const routes = []
-const context = require.context('../views', false, /\.(route.js)$/)
-context.keys().forEach(name => {
-	routes.push(context(name).default)
-})
 const router = new VueRouter({
 	base: process.env.BASE_URL,
 	mode: 'history',
 	routes,
+	scrollBehavior() {
+		return { x: 0, y: 0 }
+	},
 })
 export default router

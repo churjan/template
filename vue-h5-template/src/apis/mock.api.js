@@ -1,4 +1,4 @@
 import { postJson } from './base'
-export function pageList(params) {
-	return postJson('/mock/pageList', params)
+export function test(params) {
+	return postJson('/mock/test', params)
 }
