@@ -1,4 +1,11 @@
-import { postJson } from './base'
+import { postJson, file } from './base'
 export function test(params) {
 	return postJson('/mock/test', params)
+}
+export function imgUpload(params) {
+	return file('/mock/imgUpload', params, {
+		headers: {
+			isShowToast: false,
+		},
+	})
 }
