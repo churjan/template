@@ -27,10 +27,10 @@
 					</van-radio-group>
 				</template>
 			</van-field>
-			<img-upload />
+			<img-upload :files.sync="form.files" />
 		</van-form>
 		<div style="margin:16px;">
-			<van-button round block type="info">提交</van-button>
+			<van-button round block type="info" @click="onSubmit">提交</van-button>
 		</div>
 	</div>
 </template>
@@ -44,12 +44,18 @@ export default {
 				nickName: '',
 				cardId: '',
 				isPerson: '',
+				files: [],
 			},
 			show: false,
 		}
 	},
 	components: {
 		ImgUpload,
+	},
+	methods: {
+		onSubmit() {
+			console.log(this.form, 123)
+		},
 	},
 }
 </script>

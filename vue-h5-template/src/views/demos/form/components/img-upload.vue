@@ -10,14 +10,19 @@
 
 <script>
 export default {
-	data() {
-		return {
-			fileList: [],
-		}
+	props: {
+		files: {
+			defalut: () => [],
+		},
 	},
-	watch: {
-		fileList(val) {
-			console.log(val, 888)
+	computed: {
+		fileList: {
+			get() {
+				return this.files
+			},
+			set(val) {
+				this.$emit('update:files', val)
+			},
 		},
 	},
 	methods: {
