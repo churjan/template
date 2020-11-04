@@ -9,3 +9,6 @@ export function imgUpload(params) {
 		},
 	})
 }
+export function pageList(params) {
+	return postJson('/mock/pageList', params)
+}

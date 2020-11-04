@@ -15,7 +15,6 @@ export function post(url = '', data = {}, config = {}) {
 	})
 }
 export function postJson(url = '', data = {}, config = {}) {
-	console.log(config)
 	data = qs.parse(data)
 	return new Promise((resolve, reject) => {
 		axios
