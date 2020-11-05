@@ -1,11 +1,7 @@
 export default [
 	{
 		path: '/',
-		component: () => import('@/views/index'),
-	},
-	{
-		path: '/mock',
-		component: () => import('@/views/mock'),
+		component: () => import('@/views/index/index'),
 	},
 	{
 		path: '/demos',
