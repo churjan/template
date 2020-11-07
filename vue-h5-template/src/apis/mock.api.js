@@ -1,14 +1,14 @@
 import { postJson, file } from './base'
-export function test(params) {
-	return postJson('/mock/test', params)
+export function test(data) {
+	return postJson('/mock/test', data)
 }
-export function imgUpload(params) {
-	return file('/mock/imgUpload', params, {
+export function imgUpload(data) {
+	return file('/mock/imgUpload', data, {
 		headers: {
 			isShowToast: false,
 		},
 	})
 }
-export function pageList(params) {
-	return postJson('/mock/pageList', params)
+export function pageList(data) {
+	return postJson('/mock/pageList', data)
 }
