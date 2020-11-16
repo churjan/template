@@ -13,6 +13,8 @@ Vue.use(Vant)
 
 import 'lib-flexible/flexible'
 
+import '@/mock'
+
 Vue.config.productionTip = false
 
 new Vue({
