@@ -8,7 +8,8 @@ import '@/utils'
 import '@/filters'
 import './plugins/element'
 import '@/scss/index.scss'
-import '@/mock'
+
+if (process.env.NODE_ENV !== 'production') require('@/mock')
 
 Vue.config.productionTip = false
 
