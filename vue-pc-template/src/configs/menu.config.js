@@ -12,6 +12,10 @@ const menuList = [
     title: 'mock使用',
     name: 'mock',
   },
+  {
+    title: '排序',
+    name: 'draggable',
+  },
 ]
 
 export default menuList

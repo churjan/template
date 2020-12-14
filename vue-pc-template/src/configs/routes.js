@@ -16,6 +16,10 @@ export default [
         path: 'mock',
         component: () => import('@/views/mock'),
       },
+      {
+        path: 'draggable',
+        component: () => import('@/views/draggable'),
+      },
     ],
   },
 ]
