@@ -4,7 +4,8 @@ import router from './router'
 import store from './store'
 
 import '@/apis'
-import '@/utils'
+import utils from '@/utils'
+Vue.prototype.$utils = utils
 import '@/filters'
 import './plugins/element'
 import '@/scss/index.scss'

@@ -1,5 +1,4 @@
-import Vue from 'vue'
-const util = {
+const utils = {
   //删除对象中字段的值为空字符串，null,undefined的字段
   deleteNullValue(obj) {
     const newObj = {}
@@ -43,5 +42,4 @@ const util = {
   },
 }
 
-Vue.prototype.$util = util
-export default util
+export default utils

@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     _onScroll() {
-      return this.$util.debounce(this.onScroll, 100)()
+      return this.$utils.debounce(this.onScroll, 100)()
     },
     onScroll() {
       let { scrollTop, clientHeight } = document.scrollingElement
