@@ -20,6 +20,10 @@ export default [
         path: 'draggable',
         component: () => import('@/views/draggable'),
       },
+      {
+        path: 'html2canvas',
+        component: () => import('@/views/html2canvas'),
+      },
     ],
   },
 ]

@@ -16,6 +16,10 @@ const menuList = [
     title: '排序',
     name: 'draggable',
   },
+  {
+    title: '网页截图',
+    name: 'html2canvas',
+  },
 ]
 
 export default menuList
