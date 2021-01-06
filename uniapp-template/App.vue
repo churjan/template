@@ -2,6 +2,8 @@
 	export default {
 		onLaunch: function() {
 			console.log('App Launch')
+			console.log(process.env)
+			console.log('platform:',this.$store.state.platform)
 		},
 		onShow: function() {
 			console.log('App Show')
