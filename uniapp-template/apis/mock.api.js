@@ -1,6 +1,4 @@
-import {
-	http
-} from '@/config/request.js'
+import http from '@/config/request.js'
 
 
 // get方法调用

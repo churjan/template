@@ -25,8 +25,8 @@ http.interceptors.request.use(config => {
 })
 http.interceptors.response.use(response => {
 	const {
-		status=0,
-		message='',
+		status = 0,
+			message = '',
 	} = response.data
 	const {
 		isShowToast = true
@@ -49,6 +49,4 @@ http.interceptors.response.use(response => {
 	return Promise.reject(response)
 })
 
-export {
-	http
-}
+export default http
