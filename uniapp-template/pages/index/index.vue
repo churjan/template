@@ -1,6 +1,7 @@
 <template>
 	<view>
-		<view @click="onJump">跳转到mock</view>
+		<view @click="onJump('/demos/mock/mock')">MOCK</view>
+		<view @click="onJump('/demos/user/user')">user</view>
 	</view>
 </template>
 
@@ -15,9 +16,9 @@
 			}
 		},
 		methods: {
-			onJump(){
+			onJump(url){
 				uni.navigateTo({
-					url:'/demos/mock/mock'
+					url
 				})
 			}
 		}

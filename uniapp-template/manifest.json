@@ -103,7 +103,8 @@
         "optimization" : {
             "subPackages" : true
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "cloudfunctionRoot": "cloudfunctions/"
     },
     "mp-alipay" : {
         "usingComponents" : true,

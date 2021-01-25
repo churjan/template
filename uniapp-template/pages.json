@@ -9,7 +9,8 @@
 		"root": "demos",
 		"pages": [{
 			"path": "mock/mock"
-
+		},{
+			"path": "user/user"
 		}]
 	}]
 }
