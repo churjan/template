@@ -9,8 +9,18 @@
 		"root": "demos",
 		"pages": [{
 			"path": "mock/mock"
-		},{
+		}, {
 			"path": "user/user"
+		}, {
+			"path": "contact/contact",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"usingComponents": {
+					"cell": "plugin://contactPlugin/cell"
+				}
+			}
+			
 		}]
 	}]
 }

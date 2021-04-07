@@ -104,7 +104,13 @@
             "subPackages" : true
         },
         "usingComponents" : true,
-        "cloudfunctionRoot": "cloudfunctions/"
+        "cloudfunctionRoot": "cloudfunctions/",
+		"plugins": {
+		 "contactPlugin": {
+		     "version": "1.3.1",
+		     "provider": "wx104a1a20c3f81ec2"
+		 }
+		}
     },
     "mp-alipay" : {
         "usingComponents" : true,
