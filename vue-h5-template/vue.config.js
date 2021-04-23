@@ -23,11 +23,11 @@ module.exports = {
     },
     devServer: {
         proxy: {
-            '/yuque': {
-                target: 'https://www.yuque.com/api/v2/',
+            '/api': {
+                target: 'https://www.api.com',
                 changOrigin: true,
                 pathRewrite: {
-                    '^/yuque': '/',
+                    '^/api': '/',
                 },
             },
         },
