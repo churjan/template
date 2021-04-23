@@ -4,21 +4,17 @@ import router from './router'
 import store from './store'
 
 import '@/apis'
-import '@/utils'
 
-import Vant, { Lazyload } from 'vant'
+import Vant from 'vant'
 import 'vant/lib/index.css'
-Vue.use(Lazyload)
-Vue.use(Vant)
-
 import 'lib-flexible/flexible'
 
-if (process.env.NODE_ENV !== 'production') require('@/mock')
+Vue.use(Vant)
 
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  store,
-  render: h => h(App),
+    router,
+    store,
+    render: (h) => h(App),
 }).$mount('#app')
