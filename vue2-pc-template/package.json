@@ -4,14 +4,15 @@
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build:development": "vue-cli-service build --mode development",
-        "build:staging": "vue-cli-service build --mode staging",
         "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
+        "lint": "vue-cli-service lint",
+        "build:development": "vue-cli-service build --mode development",
+        "build:staging": "vue-cli-service build --mode staging"
     },
     "dependencies": {
         "axios": "^0.21.1",
         "core-js": "^3.6.5",
+        "element-ui": "^2.4.5",
         "vue": "^2.6.11",
         "vue-router": "^3.2.0",
         "vuex": "^3.4.0"
@@ -29,9 +30,11 @@
         "eslint-plugin-prettier": "^3.3.1",
         "eslint-plugin-vue": "^6.2.2",
         "mockjs": "^1.1.0",
+        "node-sass": "^4.9.2",
         "prettier": "^2.2.1",
         "sass": "^1.26.5",
         "sass-loader": "^8.0.2",
+        "vue-cli-plugin-element": "~1.0.1",
         "vue-template-compiler": "^2.6.11"
     }
 }

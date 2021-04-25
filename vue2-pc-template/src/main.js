@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 
 import '@/apis'
+import './plugins/element.js'
 
 Vue.config.productionTip = false
 
