@@ -6,13 +6,6 @@ module.exports = {
         config.resolve.extensions.add('css')
         config.resolve.extensions.add('scss')
     },
-    configureWebpack: {
-        resolve: {
-            alias: {
-                vue$: 'vue/dist/vue.esm.js',
-            },
-        },
-    },
     css: {
         loaderOptions: {
             // 给 sass-loader 传递选项
