@@ -14,15 +14,4 @@ module.exports = {
             },
         },
     },
-    devServer: {
-        proxy: {
-            '/api': {
-                target: 'https://www.api.com',
-                changOrigin: true,
-                pathRewrite: {
-                    '^/api': '/',
-                },
-            },
-        },
-    },
 }
