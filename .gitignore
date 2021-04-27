@@ -1,6 +1,3 @@
 .DS_Store
-node_modules
-dist
-dist-test
-dist-development
-dist-production
+node_modules/
+dist*/
