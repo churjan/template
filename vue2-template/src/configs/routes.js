@@ -1,6 +1,6 @@
 export default [
-    {
-        path: '/',
-        component: () => import('@/views/index/index'),
-    },
+  {
+    path: '/',
+    component: () => import('@/views/index/index'),
+  },
 ]

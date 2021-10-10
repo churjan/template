@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <div>test</div>
-    </div>
+  <div>
+    <div>test</div>
+  </div>
 </template>
 <script>
 export default {}
