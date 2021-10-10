@@ -1,7 +1,7 @@
 import axios from 'axios'
 import qs from 'qs'
 import './interceptor'
-export function post(url = '', data = {}, config = {}) {
+export function post (url = '', data = {}, config = {}) {
   data = qs.stringify(data)
   return new Promise((resolve, reject) => {
     axios
@@ -14,7 +14,7 @@ export function post(url = '', data = {}, config = {}) {
       })
   })
 }
-export function postJSON(url = '', data = {}, config = {}) {
+export function postJSON (url = '', data = {}, config = {}) {
   data = qs.parse(data)
   return new Promise((resolve, reject) => {
     axios
@@ -27,7 +27,7 @@ export function postJSON(url = '', data = {}, config = {}) {
       })
   })
 }
-export function get(url = '', config = {}) {
+export function get (url = '', config = {}) {
   return new Promise((resolve, reject) => {
     axios
       .get(url, config)
@@ -39,7 +39,7 @@ export function get(url = '', config = {}) {
       })
   })
 }
-export function file(url = '', data = {}, config = {}) {
+export function file (url = '', data = {}, config = {}) {
   const form = new FormData()
   Object.keys(data).forEach((key) => {
     form.append(key, data[key])
@@ -48,9 +48,9 @@ export function file(url = '', data = {}, config = {}) {
     axios
       .post(url, form, {
         headers: {
-          'Content-Type': 'multipart/form-data',
+          'Content-Type': 'multipart/form-data'
         },
-        ...config,
+        ...config
       })
       .then((res) => {
         resolve(res)
