@@ -12,9 +12,12 @@ axios.interceptors.response.use(
     if ([200].includes(status)) {
       return response.data;
     }
+    alert(message);
     return Promise.reject(message);
   },
-  (error) => Promise.reject(error),
+  (error) => {
+    alert(error);
+    Promise.reject(error);
+  },
 );
-
 export default axios;
