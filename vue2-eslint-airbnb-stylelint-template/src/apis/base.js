@@ -3,10 +3,9 @@ import qs from 'qs';
 import './interceptor';
 
 export function post(url = '', data = {}, config = {}) {
-  data = qs.stringify(data);
   return new Promise((resolve, reject) => {
     axios
-      .post(url, data, config)
+      .post(url, qs.stringify(data), config)
       .then((res) => {
         resolve(res);
       })
@@ -16,10 +15,9 @@ export function post(url = '', data = {}, config = {}) {
   });
 }
 export function postJSON(url = '', data = {}, config = {}) {
-  data = qs.parse(data);
   return new Promise((resolve, reject) => {
     axios
-      .post(url, data, config)
+      .post(url, qs.parse(data), config)
       .then((res) => {
         resolve(res);
       })
