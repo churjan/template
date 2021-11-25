@@ -1,21 +1,33 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png"></image>
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-    </view>
+    <button @click="onJump">跳转</button>
   </view>
 </template>
 
 <script>
 export default {
-	data() {
-		return {
-			title: 'Hello'
-		};
-	},Î
-	onLoad() {},
-	methods: {}
+  methods: {
+    onJump() {
+      uni.navigateTo({
+        url: '/pages/lifecycle/lifecycle',
+      });
+    },
+  },
+  onLoad: function (options) {
+    console.log('A onLoad');
+  },
+  onShow: function () {
+    console.log('A onShow');
+  },
+  onReady: function () {
+    console.log('A onReady');
+  },
+  onHide: function () {
+    console.log('A onHide');
+  },
+  onUnload: function () {
+    console.log('A onUnload');
+  },
 };
 </script>
 
