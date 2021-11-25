@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "luch-request": "^3.0.7",
+    "uview-ui": "^2.0.4"
+  }
+}
+

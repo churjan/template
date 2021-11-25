@@ -1,0 +1,13 @@
+{
+	"id": "uni-template-news",
+	"name": "新闻/资讯App模板",
+	"version": "3.1.4",
+	"description": "基于uni-app开发的新闻/资讯类App模板",
+	"keywords": [
+		"模板",
+		"新闻",
+		"资讯",
+		"nvue",
+		"新闻模板"
+	]
+}
