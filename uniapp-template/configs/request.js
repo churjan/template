@@ -1,5 +1,5 @@
-import Request from '@/js_sdk/luch-request';
-import { baseURL } from '@/config/env';
+import Request from '@/uni_modules/luch-request';
+import { baseURL } from '@/configs/env';
 const getTokenStorage = () => {
   let token = '';
   try {

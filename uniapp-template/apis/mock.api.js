@@ -1,4 +1,4 @@
-import http from '@/config/request.js';
+import http from '@/configs/request.js';
 
 // get方法调用
 export function getWay(params) {
